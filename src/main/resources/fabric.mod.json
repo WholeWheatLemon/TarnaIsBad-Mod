@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "tarnaisbad",
+  "version": "${version}",
+  "name": "TarnaIsBad",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/tarnaisbad/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "lol.ollie.tarnaisbad.Tarnaisbad"
+    ]
+  },
+  "mixins": [
+    "tarnaisbad.mixins.json",
+    {
+      "config": "tarnaisbad.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
